@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Ekranın tamamını kaplar */
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    height: 60px;
+    position: fixed; /* Sabit pozisyonda kalmasını sağlar */
+    top: 0;
+    left: 0; /* Sol kenardan başlar */
+    z-index: 1000; /* Üstte kalmasını sağlar */
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.navbar-item ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar-item ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-item ul li a:hover {
+    color: #4caf50;
+}
+
+.icon-item ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-size: 16px;
+}
+
+.icon-item ul li {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.icon-item ul li:hover {
+    color: #4caf50;
+}
+.icon-item ul li a{
+    color: #ffffff;
+    list-style: none;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+    .navbar-item ul,
+    .icon-item ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
