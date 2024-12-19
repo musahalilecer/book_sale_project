@@ -20,8 +20,8 @@ const BookCard = ({
                     <h2>Book Title: {book.title || "Unknown"}</h2>
                     <h3>Book Author: {book.firstName + " " + book.lastName || "Unknown"}</h3>
                     <h4>Book Pages: {book.page || "N/A"}</h4>
-                    <h4>Book Language: {book.language || "N/A"}</h4>
-                    <h4>Book Genre: {book.genre || "N/A"}</h4>
+                    <h4>Book Language: {book.languageName || "N/A"}</h4>
+                    <h4>Book Genre: {book.genreNames + ", " || "N/A"}</h4>
                 </div>
                 <div className="button-side">
                     {onAddToBasket && (
