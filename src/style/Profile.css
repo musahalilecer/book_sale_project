@@ -5,20 +5,21 @@
   box-sizing: border-box;
 }
 
-.body{
-  background-color: #f4f4f4;
-}
-/* Profile Page Styling */
-.profile-page {
+body {
+  background-color: #f8f9fa;
   font-family: Arial, sans-serif;
   color: #333;
-  background: #f4f4f4;
+}
+
+/* Profile Page Styling */
+.profile-page {
   min-height: 100vh;
+  width: 700px;
 }
 
 /* Header Section */
 .profile-header {
-  background: linear-gradient(135deg, #4caf50, #81c784);
+  background: linear-gradient(135deg, #ff6f61, #ff9e80);
   color: white;
   padding: 40px 20px;
   text-align: center;
@@ -66,7 +67,7 @@
 
 .profile-section h2 {
   font-size: 1.8rem;
-  color: #4caf50;
+  color: #ff6f61;
   margin-bottom: 10px;
 }
 
@@ -86,36 +87,48 @@
   margin-bottom: 10px;
 }
 
-/* Skills Styling */
-.skills-list {
+/* Order List Styling */
+.order-list li {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.skills-list li {
-  background: #4caf50;
-  color: white;
-  padding: 5px 10px;
+.order-list span {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+/* Wishlist Styling */
+.wishlist li {
+  padding: 10px;
+  background: #fdf5f1;
+  border: 1px solid #ff9e80;
   border-radius: 5px;
-  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Membership Details Styling */
+.profile-section strong {
+  color: #555;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .profile-content {
-      padding: 15px;
+    padding: 15px;
   }
 
   .profile-info h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .profile-info p {
-      font-size: 1rem;
-  }
-
-  .skills-list {
-      justify-content: center;
+    font-size: 1rem;
   }
 }
