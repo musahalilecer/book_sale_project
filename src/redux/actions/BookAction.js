@@ -45,6 +45,7 @@ export const addBook = (book) => async (dispatch) => {
             type:BookActionTypes.ADD_BOOK_SUCCESS,
             payload:response.data,
         });
+        return response;
     }
     catch(error){
         dispatch(booksError(error.message));

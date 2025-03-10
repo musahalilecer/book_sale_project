@@ -26,6 +26,7 @@ export const SearchBar = () => {
             justifyContent: 'center',
             alignItems: 'center',
             margin: '20px 0',
+            
         },
         searchBox: {
             position: 'relative',
@@ -33,6 +34,7 @@ export const SearchBar = () => {
         },
         input: {
             width: '100%',
+            height: '30px',
             padding: '10px 15px',
             borderRadius: '25px',
             border: '1px solid #ccc',

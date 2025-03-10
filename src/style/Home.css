@@ -58,12 +58,13 @@
 
 .searchbar-main {
   display: flex;
-  justify-content: center;
+  margin-right: 30px;
   margin-bottom: 20px;
 }
 
 .search input {
   width: 50%;
+  height: 30px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 25px;
